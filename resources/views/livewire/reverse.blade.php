@@ -5,9 +5,8 @@ use function Livewire\Volt\{state, mount};
 //state()で初期化
 state(['word','reversed']);
 
-// ページ読み込み時に{word}を受け取る
+
 mount(function ($word) {
-    $this->word = $word;
     $this->reversed = strrev($word);
 });
 ?>
